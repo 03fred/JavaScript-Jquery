@@ -1,0 +1,20 @@
+
+
+.rTable { 
+    display: table; 
+}
+
+.rTableRow { 
+    display: table-row; 
+	
+}
+
+.rTableCell { 
+    display: table-cell;
+
+}
+button{
+	
+			width : 100px;
+height : 100px;
+}

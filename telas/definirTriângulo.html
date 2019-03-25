@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+<fieldset>
+<form>
+<label> digite a 1° dimensão</label> 
+<input type="text" id="num1" ><br>
+ <label> digite a 2° dimensão</label>
+ <input type="text" id="num2"><br>
+<label> digite a 3° dimensão </ label>
+ <input type="text" id="num3"><br>
+
+</form>
+</fieldset>
+
+ <button onclick="myFunction()">Execute o tipo de  triangulo</button>
+
+
+<p id="demo"></p>
+<p id="p"></p>
+
+
+
+</body>
+
+<script>
+function myFunction() {
+var a = document.getElementById("num1").value;
+var b = document.getElementById("num2").value;
+var c = document.getElementById("num3").value;
+if( a != 0 && b != 0 && c != 0){
+if((a == b && a ==c )|| (b == c &&  b == a)){
+document.getElementById("demo").innerHTML = "Triangulo quadrilatero";
+}
+if((a != b && a !=c  )|| (b != c &&  b != a ) ){
+ document.getElementById("demo").innerHTML = "Triângulo escaleno";
+}
+if((a == b && a !=c )|| (b == c &&  b != a  ) || (c == a && b!=c )){
+ document.getElementById("demo").innerHTML = "Triângulo isósceles";
+}
+}
+if ( a == 0 && b == 0 && c == 0)
+{
+	document.getElementById("demo").innerHTML = "ERROR: TRIÂNGULO DE DIMENSÕES INEXISTENTES";
+}
+if ( a == 0 )
+{
+	document.getElementById("demo").innerHTML = "ERROR: TRIÂNGULO DE DIMENSÕES INEXISTENTES";
+}
+if ( b == 0 )
+{
+	document.getElementById("demo").innerHTML = "ERROR: TRIÂNGULO DE DIMENSÕES INEXISTENTES";
+}
+if ( c == 0 )
+{
+	document.getElementById("demo").innerHTML = "ERROR: TRIÂNGULO DE DIMENSÕES INEXISTENTES";
+}
+}
+</script>
+</html>

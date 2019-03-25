@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VETORES HTML</title>
+</head>
+<body>
+
+
+<button onclick="chamaVetor()"> CHAMA VETOR</button>
+
+<script>
+
+	function chamaVetor(){
+/*
+
+ DECLARAÇÃO DE VETORES
+var cores = ["verde" , "Branco" , "Vermelho"];
+var coresArray = new  Array("Verde" , "Branco" , "Vermelho");
+alert(cores);
+alert(coresArray);
+
+var coresIndice = []
+coresIndice[0] =  "verde";
+coresIndice[1] = "Branco";
+coresIndice[2] = "Vermelho";
+alert(coresIndice);
+*/
+
+/* INSERE --PUSH-- ORDENA --SORT--
+var vet = [5,3,2];
+vet.push(4);
+vet.sort();
+for(var i = 0 ; i < vet.length;i++){
+	console.log(vet[i]);
+}
+*/
+
+/* slice(a, b): retorna parte do vetor, começando no índice a
+e terminando no índice b - 1.
+splice(): permite adicionar ou remover elementos ao vetor.
+concat(v): permite concatenar o vetor v ao vetor atual.
+*/
+var vet =  [5,3,2];
+console.log(vet.pop());
+console.log(vet.shift());
+vet.unshift(1);
+
+for(var i = 0 ; i < vet.length;i++){
+	console.log(vet[i]);
+}
+
+
+
+
+
+	}
+
+
+</script>
+</body>
+</html>
